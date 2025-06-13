@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="5" failures="0" errors="0" time="2.397">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-05-28T00:20:19" time="1.615" tests="5">
+    <testcase classname=" renders correct number of flashcards questions" name=" renders correct number of flashcards questions" time="0.051">
+    </testcase>
+    <testcase classname=" renders flashcard questions and answers" name=" renders flashcard questions and answers" time="0.011">
+    </testcase>
+    <testcase classname=" flips flashcard on click" name=" flips flashcard on click" time="0.027">
+    </testcase>
+    <testcase classname=" flips flashcard back on second click" name=" flips flashcard back on second click" time="0.023">
+    </testcase>
+    <testcase classname=" shuffles flashcards on shuffle button click" name=" shuffles flashcards on shuffle button click" time="0.017">
+    </testcase>
+  </testsuite>
+</testsuites>

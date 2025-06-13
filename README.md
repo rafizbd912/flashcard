@@ -6,7 +6,7 @@ A sleek, interactive flashcard application built with React and TypeScript to he
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Flip-over Cards**  
   Tap or click any card to reveal the answer—and click again to flip it back to the question.
@@ -21,7 +21,7 @@ A sleek, interactive flashcard application built with React and TypeScript to he
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework:** React 17  
 - **Language:** TypeScript  
@@ -56,12 +56,13 @@ npm test
 ---
 ## Project Structure
 
+```text
 flashcard/
 ├── public/
 │   └── index.html
 ├── src/
 │   ├── components/
-│   │   ├── FlashCard.tsx      # Single-card UI & flip logic
+│   │   ├── FlashCard.tsx      # Single‐card UI & flip logic
 │   │   └── FlashCardDeck.tsx  # Deck container & shuffle control
 │   ├── data/
 │   │   └── cards-data.ts      # Flashcard question/answer pairs
@@ -71,3 +72,4 @@ flashcard/
 │   ├── index.tsx
 │   └── App.test.tsx           # Core component tests
 └── package.json
+```

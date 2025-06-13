@@ -1,49 +1,42 @@
-## React-TypeScript: FlashCard App
+# FlashCard Pro
 
 ![](https://hrcdn.net/s3_pub/istreet-assets/k9tVJN7Ud511KaqA96hndQ/flashcards.gif)
 
-Design flash card app that will display a series of flashcards with questions on the front and answers on the back using typescript and react. Certain core React functionalities are already implemented.
+A sleek, interactive flashcard application built with React and TypeScript to help you study Anywhere, Anytime.
 
-The application has two components: _FlashCardDeck.tsx_ and _FlashCard.tsx_ where all the functionalities will be implemented.
+---
 
-The component must have the following functionalities:
+## 🚀 Features
 
-- Display a series of flashcards with questions on the front and answers on the back.
-- Clicking a flashcard should flip it and reveal the answer on the back.
-- Clicking a flashcard twice should flip and display the question again.
-- Clicking the _Shuffle_ button should shuffles the order of the flashcards.
-- Ensure the shuffled order of the flashcards is different from the original order(present in `src/data/cards-data.ts`).
-- Update the _isFlipped_ constant to a state variable in _FlashCard/index.tsx_:
-  - when _isFlipped_ is true _flipped_ is appended to _div's_ with class name _flashcard-content_.
-  - when _isFlipped_ is false '' is appended to _div's_ with class name _flashcard-content_.
-- All the types are defined under file _src/types/FlashCard.ts_
+- **Flip-over Cards**  
+  Tap or click any card to reveal the answer—and click again to flip it back to the question.
+- **Shuffle Deck**  
+  Randomize the order of your flashcards with one click, ensuring a fresh review session every time.
+- **Responsive Layout**  
+  Works beautifully on desktop and mobile screens.
+- **Type-Safe Architecture**  
+  All data models and component props are defined in TypeScript for maximum reliability.
+- **Test-Ready Selectors**  
+  Helpful `data-testid` attributes are in place for seamless integration with Jest & React Testing Library.
 
-The following _data-testid_ attributes are required in the components for the tests to pass:
+---
 
-| **Attribute**                   | **Component**               |
-|---------------------------------|-----------------------------|
-| _flashcard-deck_                | Main FlashCardApp component |
-| _flashcard-container-{card.id}_ | Individual FlashCard        |
-| _flashcard-question-{card.id}_  | Question text in FlashCard  |
-| _flashcard-answer-{card.id}_    | Answer text in FlashCard    |
-| _shuffle-button_                | Button to Shuffle Cards     |
+## 🛠️ Tech Stack
 
-Note:
+- **Framework:** React 17  
+- **Language:** TypeScript  
+- **Bundler:** Create React App  
+- **Styling:** CSS Modules (or plain CSS)  
+- **Testing:** Jest & React Testing Library  
 
-- Components have _data-testid_ attributes for test cases and certain classes and ids for rendering purposes. They should not be changed.
-- The files that should be modified by the candidate are _src/components/FlashCardDeck.tsx_ and _src/components/FlashCard.tsx_.
+---
 
 ## Environment 
 
 - React Version: 17.0.2
+- Languages: TypeScript, JavaScript
 - Node Version: 14(LTS)
 - Default Port: 8000
-
-
-**Read Only Files**
-- `src/App.test.tsx`
-- `src/types/FlashCard.ts`
-- `src/data/cards-data.ts`
 
 
 **Commands**
@@ -60,3 +53,21 @@ npm install
 npm test
 ```
 
+---
+## Project Structure
+
+flashcard/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── FlashCard.tsx      # Single-card UI & flip logic
+│   │   └── FlashCardDeck.tsx  # Deck container & shuffle control
+│   ├── data/
+│   │   └── cards-data.ts      # Flashcard question/answer pairs
+│   ├── types/
+│   │   └── FlashCard.ts       # Card data interface
+│   ├── App.tsx
+│   ├── index.tsx
+│   └── App.test.tsx           # Core component tests
+└── package.json
